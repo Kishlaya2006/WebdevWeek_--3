@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7 Wonders Of The World</title>
+  <link rel="icon" type="image/jpg" href="/WEBSITE LEARNING/images/smiley.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient-to-br from-[#08001f] to-[#30197d] text-white font-[Times_New_Roman] m-0">
+
+  <!-- HEADER -->
+  <header class="bg-purple-500 text-center py-5 shadow-lg">
+    <h1 id="h11" class="text-4xl font-semibold tracking-wide inline-block whitespace-nowrap overflow-hidden animate-typing">
+      WELCOME TO KISHLAYA'S WEBSITE...
+    </h1>
+  </header>
+
+  <!-- USER SECTION -->
+  <div id="user" class="flex flex-col items-center justify-center mt-10 space-y-4 px-4">
+    <h1 id="h12" class="text-3xl font-semibold">Hello</h1>
+    <div class="flex flex-col items-center space-y-2">
+      <label class="text-lg">Username:</label>
+      <input id="mytext" class="text-black rounded-md px-4 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500">
+    </div>
+    <button id="mySubmit" class="mt-3 bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-md text-white font-semibold transition-all duration-300">
+      Submit
+    </button>
+  </div>
+
+  <!-- HEADING -->
+  <h2 class="text-center bg-black text-white border-t-2 border-b-2 border-cyan-400 py-6 text-2xl font-semibold mt-10 shadow-[0_0_10px_cyan]">
+    7 WONDERS OF THE WORLD
+  </h2>
+
+  <!-- TIMER -->
+  <div class="timer flex flex-col justify-center items-center text-center bg-fuchsia-600/10 text-white text-3xl sm:text-4xl md:text-5xl font-bold rounded-xl w-11/12 sm:w-4/5 mx-auto my-10 py-8 transition-opacity duration-500">
+    <div class="flex justify-center items-center gap-6">
+      <div>
+        <span id="hours">00</span>
+        <small class="block text-base font-normal">HOURS</small>
+      </div>
+      <span>:</span>
+      <div>
+        <span id="minutes">00</span>
+        <small class="block text-base font-normal">MIN</small>
+      </div>
+      <span>:</span>
+      <div>
+        <span id="seconds">00</span>
+        <small class="block text-base font-normal">SEC</small>
+      </div>
+    </div>
+    <small id="date" class="block text-lg font-medium mt-4 text-gray-300"></small>
+    <button id="backToIST" class="hidden mt-4 bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-md text-white text-base font-semibold transition-all duration-300">
+      Back to India Time
+    </button>
+  </div>
+
+  <!-- 7 WONDERS SECTION -->
+  <section class="wonders flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 my-16 relative z-10 px-4">
+    
+    <!-- Example Card (Repeat for all) -->
+    <div class="wonder-card bg-gray-100 text-black border-2 border-black w-[90%] sm:w-72 rounded-lg text-center p-4 hover:scale-105 hover:shadow-[0_0_20px_rgb(235,224,15)] transition-all duration-300">
+      <img src="image/ChichenItza.jpg" alt="Chichen Itza" class="w-full h-44 rounded-md object-cover">
+      <a href="#" class="block mt-2 text-purple-700 font-bold hover:underline">Chichen Itzá</a>
+      <button class="mt-2 bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded-md text-sm"
+              onclick="showLocalTime('Chichen Itza')">Show Local Time</button>
+    </div>
+
+    <div class="wonder-card bg-gray-100 text-black border-2 border-black w-[90%] sm:w-72 rounded-lg text-center p-4 hover:scale-105 hover:shadow-[0_0_20px_rgb(235,224,15)] transition-all duration-300">
+      <img src="image/colosseum.jpg" alt="The Colosseum" class="w-full h-44 rounded-md object-cover">
+      <a href="#" class="block mt-2 text-purple-700 font-bold hover:underline">The Colosseum</a>
+      <button class="mt-2 bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded-md text-sm"
+              onclick="showLocalTime('Colosseum')">Show Local Time</button>
+    </div>
+
+    <div class="wonder-card bg-gray-100 text-black border-2 border-black w-[90%] sm:w-72 rounded-lg text-center p-4 hover:scale-105 hover:shadow-[0_0_20px_rgb(235,224,15)] transition-all duration-300">
+      <img src="image/wallOfChina.jpg" alt="Great Wall of China" class="w-full h-44 rounded-md object-cover">
+      <a href="#" class="block mt-2 text-purple-700 font-bold hover:underline">The Great Wall of China</a>
+      <button class="mt-2 bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded-md text-sm"
+              onclick="showLocalTime('China')">Show Local Time</button>
+    </div>
+
+    <div class="wonder-card bg-gray-100 text-black border-2 border-black w-[90%] sm:w-72 rounded-lg text-center p-4 hover:scale-105 hover:shadow-[0_0_20px_rgb(235,224,15)] transition-all duration-300">
+      <img src="image/Petra.jpg" alt="Petra" class="w-full h-44 rounded-md object-cover">
+      <a href="#" class="block mt-2 text-purple-700 font-bold hover:underline">Petra</a>
+      <button class="mt-2 bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded-md text-sm"
+              onclick="showLocalTime('Petra')">Show Local Time</button>
+    </div>
+
+    <div class="wonder-card bg-gray-100 text-black border-2 border-black w-[90%] sm:w-72 rounded-lg text-center p-4 hover:scale-105 hover:shadow-[0_0_20px_rgb(235,224,15)] transition-all duration-300">
+      <img src="image/machuPichu.jpg" alt="Machu Picchu" class="w-full h-44 rounded-md object-cover">
+      <a href="#" class="block mt-2 text-purple-700 font-bold hover:underline">Machu Picchu</a>
+      <button class="mt-2 bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded-md text-sm"
+              onclick="showLocalTime('Machu Picchu')">Show Local Time</button>
+    </div>
+
+    <div class="wonder-card bg-gray-100 text-black border-2 border-black w-[90%] sm:w-72 rounded-lg text-center p-4 hover:scale-105 hover:shadow-[0_0_20px_rgb(235,224,15)] transition-all duration-300">
+      <img src="image/ChristTheRedeemer.jpg" alt="Christ the Redeemer" class="w-full h-44 rounded-md object-cover">
+      <a href="#" class="block mt-2 text-purple-700 font-bold hover:underline">Christ the Redeemer</a>
+      <button class="mt-2 bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded-md text-sm"
+              onclick="showLocalTime('Redeemer')">Show Local Time</button>
+    </div>
+
+    <div class="wonder-card bg-gray-100 text-black border-2 border-black w-[90%] sm:w-72 rounded-lg text-center p-4 hover:scale-105 hover:shadow-[0_0_20px_rgb(235,224,15)] transition-all duration-300">
+      <img src="image/tajmahal.jpg" alt="Taj Mahal" class="w-full h-44 rounded-md object-cover">
+      <a href="#" class="block mt-2 text-purple-700 font-bold hover:underline">Taj Mahal</a>
+      <button class="mt-2 bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded-md text-sm"
+              onclick="showLocalTime('Taj Mahal')">Show Local Time</button>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-violet-500 h-40 flex flex-col items-center justify-center text-center leading-[30px] text-[18px] mt-8 shadow-inner rounded-t-xl">
+    <b>
+      Creator: Kishlaya Bhagat<br>
+      &copy; Copyright Reserved<br>
+      <a href="mailto:bhagat.kishlaya@gmail.com" class="text-blue-900 hover:underline">
+        bhagat.kishlaya@gmail.com
+      </a>
+    </b>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

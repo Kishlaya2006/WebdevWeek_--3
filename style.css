@@ -1,0 +1,22 @@
+#h11 {
+  animation: typing 4s steps(32) 1s forwards, blink 0.8s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  border-right: 4px solid white;
+  max-width: max-content;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Timer fade animation */
+.timer {
+  transition: opacity 0.4s ease;
+}
